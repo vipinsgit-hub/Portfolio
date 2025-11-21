@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>vipin – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Icons (Font Awesome) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar__top">
+        <div class="sidebar__profile">
+          <!-- No image – just initials -->
+          <div class="avatar">
+            <span class="avatar__initials">V</span>
+          </div>
+          <div>
+            <h1 class="sidebar__name">vipin</h1>
+            <p class="sidebar__role">Aspiring Full-Stack Developer</p>
+          </div>
+        </div>
+
+        <nav class="sidebar__nav">
+          <p class="sidebar__label">CREATIONS</p>
+          <ul>
+            <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#work" class="nav-link"><i class="fa-solid fa-briefcase"></i> Work</a></li>
+            <li><a href="#projects" class="nav-link"><i class="fa-solid fa-flask"></i> Personal Projects</a></li>
+            <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="sidebar__bottom">
+        <div class="sidebar__socials">
+          <p class="sidebar__label">SOCIALS</p>
+          <div class="social-icons">
+            <!-- CHANGE THESE href VALUES TO YOUR REAL LINKS -->
+            <a href="mailto:vipinb641@email.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://github.com/vipinsgit-hub" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vipin-cybersec" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/myself.vipin" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <p class="sidebar__coords"></p>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section id="home" class="card hero">
+        <div class="hero__content">
+          <p class="hero__eyebrow">BUILDING FOR THE FUN • WEB DEVELOPER</p>
+          <h2 class="hero__title">Hey, I'm <span>vipin</span>.</h2>
+          <p class="hero__subtitle">
+            I’m a computer science student and an aspiring full-stack developer. I love building clean web experiences,
+            exploring cybersecurity, and turning ideas into real products.
+          </p>
+
+          <div class="hero__meta">
+            <div>
+              <p class="hero__meta-label">FOCUS AREAS</p>
+              <p class="hero__meta-value">Full-Stack • Web Apps • Cybersecurity</p>
+            </div>
+            <div>
+              <p class="hero__meta-label">CURRENTLY</p>
+              <p class="hero__meta-value">2nd year • Learning HTML, CSS, JS</p>
+            </div>
+          </div>
+
+          <div class="hero__buttons">
+            <a href="#work" class="btn btn--primary">View my work</a>
+            <a href="#contact" class="btn btn--ghost">Let’s connect</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK SECTION -->
+      <section id="work" class="card section">
+        <header class="section__header">
+          <div>
+            <p class="section__eyebrow"><i class="fa-solid fa-briefcase"></i> Work</p>
+            <h3 class="section__title">Featured Work</h3>
+            <p class="section__subtitle">A curated collection of projects that show what I can build.</p>
+          </div>
+          <a href="#projects" class="section__cta">All Projects <i class="fa-solid fa-arrow-right"></i></a>
+        </header>
+
+        <div class="grid grid--3">
+          <!-- Card 1 -->
+          <article class="project-card">
+            <p class="project-card__badge">2025</p>
+            <div class="project-card__thumb project-card__thumb--blue"></div>
+            <div class="project-card__body">
+              <p class="project-card__company">Personal Project</p>
+              <h4 class="project-card__title">Bingo Game Web App</h4>
+              <p class="project-card__desc">
+                A simple interactive bingo game built with HTML, CSS, and JavaScript, deployed on Vercel.
+              </p>
+              <div class="project-card__footer">
+                <span>HTML • CSS • JS</span>
+                <!-- Put your live link here -->
+                <a href="https://bingov1-vipin.vercel.app" class="project-card__link" target="_blank">
+                  Live <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          
+          <!-- Card 3 -->
+          <article class="project-card">
+            <p class="project-card__badge">COMING SOON</p>
+            <div class="project-card__thumb project-card__thumb--cyan"></div>
+            <div class="project-card__body">
+              <p class="project-card__company">Learning Project</p>
+              <h4 class="project-card__title">Micro SaaS Idea</h4>
+              <p class="project-card__desc">
+                An experimental micro SaaS product I’m planning to build around student productivity and workflows.
+              </p>
+              <div class="project-card__footer">
+                <span>Full-Stack</span>
+                <span class="project-card__pill">In progress</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PERSONAL PROJECTS SECTION -->
+      <section id="projects" class="card section">
+        <header class="section__header">
+          <div>
+            <p class="section__eyebrow"><i class="fa-solid fa-flask"></i> Personal Projects</p>
+            <h3 class="section__title">Side Experiments</h3>
+            <p class="section__subtitle">
+              Smaller projects where I try new tools, stacks, and ideas.
+            </p>
+          </div>
+        </header>
+
+        <ul class="list">
+          <li class="list__item">
+            <div>
+              <h4 class="list__title">Cybersecurity Lab Journey</h4>
+              <p class="list__desc">Notes and labs as I learn ethical hacking, networking, and security basics.</p>
+            </div>
+            <span class="list__tag">Learning</span>
+          </li>
+          <li class="list__item">
+            <div>
+              <h4 class="list__title">Portfolio v2 (Planned)</h4>
+              <p class="list__desc">Next version of this site using React / Next.js and better animations.</p>
+            </div>
+            <span class="list__tag">Upcoming</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="card section">
+        <header class="section__header">
+          <div>
+            <p class="section__eyebrow"><i class="fa-solid fa-user"></i> About</p>
+            <h3 class="section__title">Who I Am</h3>
+          </div>
+        </header>
+
+        <p class="section__text">
+          I’m a CSE student, currently in 2nd year. I enjoy building web apps, exploring
+          cybersecurity, and learning how real-world products are made — from idea to deployment.
+        </p>
+        <p class="section__text">
+          My current goals are to sharpen my fundamentals (DSA, web dev, security), build strong projects, and land a
+          good developer role after college.
+        </p>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="card section">
+        <header class="section__header">
+          <div>
+            <p class="section__eyebrow"><i class="fa-solid fa-envelope"></i> Contact</p>
+            <h3 class="section__title">Let’s Collaborate</h3>
+            <p class="section__subtitle">
+              Open to internships, freelance work, or just a friendly chat about tech and ideas.
+            </p>
+          </div>
+        </header>
+
+        <div class="contact">
+          <div class="contact__item">
+            <p class="contact__label">Email</p>
+            <a href="mailto:vipinb641@email.com" class="contact__value">vipinb641@email.com</a>
+          </div>
+          <div class="contact__item">
+            <p class="contact__label">GitHub</p>
+            <a href="https://github.com/vipinsgit-hub" target="_blank" class="contact__value">@vipinsgit-hub</a>
+          </div>
+          <div class="contact__item">
+            <p class="contact__label">LinkedIn</p>
+            <a href="https://www.linkedin.com/in/vipin-cybersec" target="_blank" class="contact__value">vipincyber-sec</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Simple nav active state on click
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
