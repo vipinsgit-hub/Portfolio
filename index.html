@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <title>vipin – Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <!-- Icons (Font Awesome) -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,11 +16,9 @@
 </head>
 <body>
   <div class="layout">
-    <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="sidebar__top">
         <div class="sidebar__profile">
-          <!-- No image – just initials -->
           <div class="avatar">
             <span class="avatar__initials">V</span>
           </div>
@@ -48,7 +44,6 @@
         <div class="sidebar__socials">
           <p class="sidebar__label">SOCIALS</p>
           <div class="social-icons">
-            <!-- CHANGE THESE href VALUES TO YOUR REAL LINKS -->
             <a href="mailto:vipinb641@email.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
             <a href="https://github.com/vipinsgit-hub" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/vipin-cybersec" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -62,7 +57,6 @@
 
     <!-- MAIN CONTENT -->
     <main class="main">
-      <!-- HERO SECTION -->
       <section id="home" class="card hero">
         <div class="hero__content">
           <p class="hero__eyebrow">BUILDING FOR THE FUN • WEB DEVELOPER</p>
@@ -90,7 +84,7 @@
         </div>
       </section>
 
-      <!-- WORK SECTION -->
+      <!-- PROJECTS SECTION #1 -->
       <section id="work" class="card section">
         <header class="section__header">
           <div>
@@ -114,7 +108,6 @@
               </p>
               <div class="project-card__footer">
                 <span>HTML • CSS • JS</span>
-                <!-- Put your live link here -->
                 <a href="https://bingov1.vercel.app" class="project-card__link" target="_blank">
                   Live <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
@@ -136,7 +129,6 @@
               </p>
               <div class="project-card__footer">
                 <span>HTML • CSS </span>
-                <!-- Put your live link here -->
                 <a href="https://stats-v1.vercel.app/" class="project-card__link" target="_blank">
                   Live <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
@@ -147,7 +139,7 @@
           
 
 
-          <!-- Card 4 -->
+          <!-- Card 3 -->
           <article class="project-card">
             <p class="project-card__badge">2025</p>
             <div class="project-card__thumb project-card__thumb--cyan"></div>
@@ -169,7 +161,7 @@
         </div>
       </section>
 
-      <!-- PERSONAL PROJECTS SECTION -->
+      <!-- PROJECTS SECTION #2 -->
       <section id="projects" class="card section">
         <header class="section__header">
           <div>
@@ -199,7 +191,7 @@
         </ul>
       </section>
 
-      <!-- ABOUT SECTION -->
+      <!-- ABOUT ME -->
       <section id="about" class="card section">
         <header class="section__header">
           <div>
@@ -218,7 +210,8 @@
         </p>
       </section>
 
-      <!-- CONTACT SECTION -->
+      <!-- CONTACTS -->
+  
       <section id="contact" class="card section">
         <header class="section__header">
           <div>
@@ -249,7 +242,6 @@
   </div>
 
   <script>
-    // Simple nav active state on click
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
